@@ -9,7 +9,10 @@ var makeHashTable = function() {
       },
 
       insert: function(key, value) {
-        //your code is here
+        //1- should check _storage if contains value or not
+        // 2- if _storage contains a value, define a new_array.
+        // 3- first index of new_array should be another_array.
+        // 4- first index of another_array should contain key, and second index should contain value.
         this._storage[hashFn(key, max)] = value;
     }
   }
